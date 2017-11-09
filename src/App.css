@@ -10,9 +10,14 @@
   grid-template-areas: 
     "header header"
     "video-player video-player"
+    "drop-down drop-down"
     "show-list show-list"
     "talk-list talk-list"
   ;
+}
+
+.dropDown {
+  grid-area: drop-down;
 }
 
 .showListWrapper {
