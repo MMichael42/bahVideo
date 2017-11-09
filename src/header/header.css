@@ -1,0 +1,7 @@
+.headerWrapper {
+  grid-area: header;
+  /* border: 1px solid red; */
+  font-size: 35px;
+  margin-top: 20px;
+
+}

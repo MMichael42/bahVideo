@@ -1,0 +1,32 @@
+.talkListItemWrapper {
+  /* border: 1px solid grey; */
+  margin-bottom: 10px;
+}
+
+.buttonTalk {
+  background-color: white;
+  color: #c47900;
+  border: none;
+  padding: 12px 8px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  margin: 00px 0px;
+  cursor: pointer;
+  width: 100%;
+  min-height: 4em;
+  border-radius: 2px;
+  border: 1px solid #ffa205;
+  display: inline-block;
+  transition-duration: 0.4s; 
+}
+
+.buttonTalk:hover {
+  background-color: #ffa205;
+  color: white;
+}
+
+.buttonTalkSelected {
+  background-color: #ffa205;
+  color: white;
+}

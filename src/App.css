@@ -1,0 +1,50 @@
+.App {
+  /* border: 1px solid grey; */
+  margin: auto;
+  margin-top: 0px;
+  width: 95%;
+  
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "header header"
+    "video-player video-player"
+    "show-list show-list"
+    "talk-list talk-list"
+  ;
+}
+
+.showListWrapper {
+  grid-area: show-list;
+  /* border: 1px solid red; */
+  display: grid;
+  grid-gap: .25em;
+  grid-template-columns: 1fr 1fr;
+}
+
+.talkListWrapper {
+  grid-area: talk-list;
+
+  /* background-color: #ffa205;
+  border: 0px solid grey;
+  border-radius: 4px;
+  padding: 10px; */
+}
+
+
+
+@media screen and (min-width: 1020px) {
+  .App {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "show-list show-list show-list"
+    "video-player video-player talk-list"
+    ;
+  }
+
+  .showListWrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
