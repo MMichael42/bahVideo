@@ -76,7 +76,7 @@ const BAHdata = {
         {
           speaker: "Adam Becker",
           title: "The Strong Copernican Principle",
-          embedCode: "f8yiX04gG8",
+          embedCode: "Uf8yiX04gG8",
           description: "Adam Becker updates the Copernican Principle."
         },
         {

@@ -54,7 +54,9 @@ class App extends Component {
             click={ () => this.selectVideoHandler(talk) }
             title={talk.title} 
             speaker={talk.speaker} 
-            selectedTalk={this.state.selectedTalk.title} />
+            selectedTalk={this.state.selectedTalk.title}
+            selectedShow={this.state.selectedShow} 
+            youtubeID={talk.embedCode} />
         })}
       </div>
     );

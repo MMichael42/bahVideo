@@ -1,14 +1,15 @@
 .videoPlayerWrapper {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-area: video-player;
   /* border: 1px blue solid; */
 
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr;
   grid-template-areas: 
     "video-window video-window"
     "video-title video-title"
     "description description"
-  ;
+  ; */
 
   padding-bottom: 10px;
 }

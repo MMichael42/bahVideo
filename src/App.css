@@ -44,7 +44,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "header header header"
-    "show-list show-list show-list"
+    "drop-down drop-down drop-down"
     "video-player video-player talk-list"
     ;
   }
