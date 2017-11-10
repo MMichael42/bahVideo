@@ -40,7 +40,7 @@
 .videoTitle {
   grid-area: video-title;
   /* border: 1px blue solid; */
-  font-size: 20px;
+  font-size: 22px;
   text-align: left;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -61,6 +61,7 @@
   /* border: 1px green solid; */
 
   text-align: left;
+  font-size: 18px;
 
   overflow: hidden;
   min-height: 0;

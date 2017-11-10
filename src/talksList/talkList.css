@@ -14,6 +14,10 @@
   cursor: pointer;
 }
 
+.selectedTalkListItem {
+  border: 1px solid grey;
+}
+
 .thumbnailBox {
   grid-area: thumbnail;
   /* border: 1px solid red; */
@@ -66,6 +70,14 @@ a:hover {
 a:active {
 }
 
+@media screen and (min-width: 1020px) {
+  #speaker {
+    font-size: 16px;
+  }
+  #title {
+    font-size: 18px;
+  }
+}
 
 
 /* .buttonTalk {

@@ -3,15 +3,15 @@ import './talkList.css';
 
 const talkList = (props) => {
 
-  // const selectedStateClass = props.selectedTalk === props.title
-  //   ? "buttonTalk buttonTalkSelected"
-  //   : "buttonTalk";
+  const selectedStateClass = props.selectedTalk === props.title
+    ? "talkListItemWrapper selectedTalkListItem"
+    : "talkListItemWrapper";
   
   const thumbnailImg = `https://img.youtube.com/vi/${props.youtubeID}/0.jpg`;
 
   return (
     <a href="#header">
-      <div className="talkListItemWrapper" onClick={props.click}>
+      <div className={selectedStateClass} onClick={props.click}>
         <div className="thumbnailBox">
           <img alt="" src={thumbnailImg} width="100%"/>
         </div>

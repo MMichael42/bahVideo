@@ -18,6 +18,8 @@
 
 .dropDown {
   grid-area: drop-down;
+  margin-top: 30px;
+  font-size: 18px;
 }
 
 .showListWrapper {
@@ -38,13 +40,11 @@
 }
 
 
-
 @media screen and (min-width: 1020px) {
   .App {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-    "header header header"
-    "drop-down drop-down drop-down"
+    "header header drop-down"
     "video-player video-player talk-list"
     ;
   }
