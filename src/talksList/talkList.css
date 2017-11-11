@@ -71,10 +71,18 @@ a:active {
 }
 
 @media screen and (min-width: 1020px) {
+  .talkListItemWrapper {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
   #speaker {
-    font-size: 16px;
+    font-size: 13px;
   }
   #title {
-    font-size: 18px;
+    font-size: 15px;
+  }
+  #show {
+    font-size: 12px
   }
 }

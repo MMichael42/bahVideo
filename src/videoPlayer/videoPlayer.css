@@ -10,8 +10,10 @@
     "video-title video-title"
     "description description"
   ; */
-
+  width: 95%;
+  margin: auto;
   padding-bottom: 10px;
+  margin-top: 0px;
 }
 
 .videoWindow {

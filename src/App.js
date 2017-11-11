@@ -60,12 +60,18 @@ class App extends Component {
       </div>
     );
 
+    let sidebar = (
+      <div className="sideBar">
+        {dropDownMenu}
+        {talkList}
+      </div>
+    );
+
     return (
       <div className="App">
         <Header />
         <VideoPlayer currentVideo={this.state.selectedTalk} />
-        {dropDownMenu}
-        {talkList}
+        {sidebar}
       </div>
     );
   }

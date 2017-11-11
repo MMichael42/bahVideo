@@ -2,7 +2,7 @@
   /* border: 1px solid grey; */
   margin: auto;
   margin-top: 0px;
-  width: 95%;
+  width: 100%;
   
   display: grid;
   grid-gap: 1em;
@@ -10,16 +10,17 @@
   grid-template-areas: 
     "header header"
     "video-player video-player"
-    "drop-down drop-down"
-    "show-list show-list"
-    "talk-list talk-list"
+    "sidebar sidebar"
   ;
 }
 
 .dropDown {
   grid-area: drop-down;
-  margin-top: 30px;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 15px;
   font-size: 18px;
+  width: 95%;
 }
 
 .showListWrapper {
@@ -32,6 +33,19 @@
 
 .talkListWrapper {
   grid-area: talk-list;
+  margin: auto;
+  width: 95%;
+}
+
+.sideBar {
+  grid-area: sidebar;
+  /* border: 1px solid orange; */
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  margin-top: 0px;
+
 }
 
 
@@ -39,9 +53,19 @@
   .App {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-    "header header drop-down"
-    "video-player video-player talk-list"
+    "header header header"
+    "video-player video-player sidebar"
     ;
+  }
+
+  .dropDown {
+    margin-top: -0px;
+    width: 100%;
+  }
+
+  .sideBar {
+    width: 100%;
+    margin-left: -10px;
   }
 
   .showListWrapper {
@@ -53,6 +77,9 @@
     overflow-y: scroll;
     border: 1px #ccc solid;
     border-radius: 4px;
-    padding: 15px;
+    padding: 0px;
+    width: 100%;
+    margin: auto;
+    margin-top: 0px;
   }
 }

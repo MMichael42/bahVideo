@@ -2,10 +2,15 @@
   grid-area: header;
   /* border: 1px solid red; */
   font-size: 35px;
-  margin-top: 30px;
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 15px;
 
   display: flex;
   flex-direction: row;
+
+  background-color:#eee;
 }
 
 .headerText {
@@ -29,6 +34,12 @@
 #headerSubtitle {
   font-size: 25px;
   font-weight: lighter;
+}
+
+@media screen and (min-width: 1020px) {
+  .headerWrapper {
+    margin-top: 0px;
+  }
 }
 
 @media screen and (max-width: 321px) {
