@@ -21,8 +21,6 @@ const talkList = (props) => {
           <div id="title" className="textBox"><b>{props.title}</b></div>
           <div id="show" className="textBox">{props.selectedShow}</div>
         </div>
-
-        {/* <button className={selectedStateClass} onClick={props.click}>{props.title} by {props.speaker}</button> */}
       </div>
     </a>  
   );

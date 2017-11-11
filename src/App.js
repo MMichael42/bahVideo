@@ -14,7 +14,7 @@ import TalkListItem from './talksList/talksList';
 class App extends Component {
 
   state = {
-    currentTalkList: bahData.shows2[0].talks,
+    currentTalkList: bahData.shows[0].talks,
     selectedTalk: bahData.latest,
     selectedShow: bahData.latest.show
   }
@@ -24,17 +24,16 @@ class App extends Component {
   }
 
   showSelectHandler = (target) => {
-    let showsObj = bahData.shows2.map( show => show.showTitle);
+    let showsObj = bahData.shows.map( show => show.showTitle);
     let currentShowIndex = showsObj.indexOf(target.label); 
-    this.setState({currentTalkList: bahData.shows2[currentShowIndex].talks});
+    this.setState({currentTalkList: bahData.shows[currentShowIndex].talks});
     this.setState({selectedShow: target.label});
   }
 
 
   render() {
 
-    let showListDropdownData = bahData.shows2.map( show => show.showTitle );
-    // console.log(showListDropdownData); 
+    let showListDropdownData = bahData.shows.map( show => show.showTitle );
 
     let dropDownMenu = (
       <div className="dropDown">

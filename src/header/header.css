@@ -3,4 +3,39 @@
   /* border: 1px solid red; */
   font-size: 35px;
   margin-top: 30px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.headerText {
+  /* border: 1px solid #008000; */
+}
+.headerImg {
+  /* border: 1px solid blue; */
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+#logo {
+  height:100%;
+  width: auto;
+  display: block;
+}
+
+#headerTitle {
+  font-size: 35px;
+}
+#headerSubtitle {
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 321px) {
+  #headerTitle {
+    font-size: 30px;
+  }
+  #headerSubtitle {
+    font-size: 20px;
+  }
 }

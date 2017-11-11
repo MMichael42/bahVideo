@@ -32,11 +32,6 @@
 
 .talkListWrapper {
   grid-area: talk-list;
-
-  /* background-color: #ffa205;
-  border: 0px solid grey;
-  border-radius: 4px;
-  padding: 10px; */
 }
 
 
@@ -51,5 +46,13 @@
 
   .showListWrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .talkListWrapper {
+    height: 75vh;
+    overflow-y: scroll;
+    border: 1px #ccc solid;
+    border-radius: 4px;
+    padding: 15px;
   }
 }

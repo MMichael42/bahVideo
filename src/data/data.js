@@ -6,7 +6,7 @@ const BAHdata = {
     embedCode: "vFphKNaRcfM",
     show: "BAHFest East 2017"
   },
-  shows2: [
+  shows: [
     { showTitle: "BAHFest East 2017",
       talks: [
         {
@@ -485,72 +485,6 @@ const BAHdata = {
       ]
     },
   ],
-  shows: {
-    east: {
-      2013: {
-        videos: [
-        {
-          speaker: "Zach Weinersmith",
-          title: "Weinersmith's Infantapaulting Hypothesis",
-          embedCode: "94_omZ2RnfI"
-        },
-        {
-          speaker: "Cori McLean",
-          title: "Tasty Chicken",
-          embedCode: "TRPKOrTRE0w"
-        },
-        {
-          speaker: "Jordan Smith",
-          title: "Super Humans",
-          embedCode: "7hceWiu5QbU"
-        },
-        {
-          speaker: "Tomer Ullman",
-          title: "The Crying Game",
-          embedCode: "Zm-sQnazFAQ"
-        },
-        {
-          speaker: "Ed Chung",
-          title: "Geek Rule",
-          embedCode: "Wl7qxP6aPBw"
-        },
-        {
-          speaker: "Stacy Farina",
-          title: "Fish Are Dumb",
-          embedCode: "V6c9zglwiEo"
-        },
-        {
-          speaker: "Justin Werfel",
-          title: "Body Size",
-          embedCode: "kq7XHmyGEPs"
-        }
-        ]
-      }
-    },
-    showsList: ["BAHFest East 2013", "BAHFest East 2014", "BAHFest West 2014"]
-  }, 
-  showImages: [
-    { 
-      show: 'houston',
-      img: "/src/images/houston.jpg" 
-    },
-    { 
-      show: 'london',
-      img: "/src/images/london.jpg"
-    },
-    { 
-      show: 'east',
-      img: "/src/images/mit.jpg" 
-    },
-    { 
-      show: 'seattle',
-      img: "/src/images/seattle.jpg" 
-    },
-    { 
-      show: 'west',
-      img: "/src/images/sf.jpg" 
-    }
-  ]
 };
 
 export default BAHdata;
