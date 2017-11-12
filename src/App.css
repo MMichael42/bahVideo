@@ -73,7 +73,7 @@
   }
 
   .talkListWrapper {
-    height: 75vh;
+    height: 65vh;
     overflow-y: scroll;
     border: 1px #ccc solid;
     border-radius: 4px;
