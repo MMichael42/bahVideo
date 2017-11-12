@@ -42,8 +42,6 @@
   /* border: 1px solid orange; */
   display: flex;
   flex-direction: column;
-  margin: auto;
-  width: 100%;
   margin-top: 0px;
 
 }
@@ -59,8 +57,7 @@
   }
 
   .dropDown {
-    margin-top: -0px;
-    width: 100%;
+    margin-top: 0px;
   }
 
   .sideBar {
