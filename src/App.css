@@ -3,12 +3,15 @@
   margin: auto;
   margin-top: 0px;
   width: 100%;
+
+  background-color: white;
   
   display: grid;
   grid-gap: 1em;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
     "header header"
+    "topAd topAd"
     "video-player video-player"
     "sidebar sidebar"
   ;
@@ -44,6 +47,7 @@
   flex-direction: column;
   margin-top: 0px;
 
+
 }
 
 
@@ -52,6 +56,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "header header header"
+    "topAd topAd sidebar"
     "video-player video-player sidebar"
     ;
   }
@@ -63,6 +68,7 @@
   .sideBar {
     width: 100%;
     margin-left: -10px;
+    margin-bottom: 20px;
   }
 
   .showListWrapper {
@@ -78,5 +84,11 @@
     width: 100%;
     margin: auto;
     margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .App {
+    max-width: 1440px;
   }
 }
