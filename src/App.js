@@ -71,7 +71,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <TopAd />
+        {/* <TopAd /> */}
         <VideoPlayer currentVideo={this.state.selectedTalk} />
         {sidebar}
       </div>

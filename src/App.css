@@ -11,7 +11,6 @@
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
     "header header"
-    "topAd topAd"
     "video-player video-player"
     "sidebar sidebar"
   ;
@@ -56,7 +55,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "header header header"
-    "topAd topAd sidebar"
     "video-player video-player sidebar"
     ;
   }
