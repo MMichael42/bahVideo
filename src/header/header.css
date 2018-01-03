@@ -2,6 +2,120 @@
   grid-area: header;
   /* border: 1px solid red; */
   font-size: 35px;
-  margin-top: 20px;
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 15px;
 
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: #48b6fa;
+
+  box-shadow: 0px 2px 0px rgb(175, 175, 175);
 }
+
+.headerText {
+  /* border: 1px solid #008000; */
+  padding-top: 5px;
+}
+#headerTitle {
+  font-size: 35px;
+  font-weight: regular;
+}
+#headerSubtitle {
+  font-size: 25px;
+  font-weight: lightest;
+}
+
+
+.headerImg {
+  /* border: 1px solid blue; */
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+#logo {
+  height:100%;
+  width: auto;
+  display: block;
+}
+.headerCollage {
+  display: none;
+  height: 100%;
+  width: auto;
+}
+
+@media screen and (max-width: 321px) {
+  #headerTitle {
+    font-size: 30px;
+  }
+  #headerSubtitle {
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (min-width: 400px) {
+  .headerWrapper {
+    padding: 0;
+    padding-left: 15px;
+    position: relative;
+  }
+  .headerImg {
+    padding-top: 0px;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 12px;
+    display: none;
+  }
+  .headerCollage {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+    margin-left: auto;
+    opacity: 0.250;
+    overflow: hidden;
+  }
+  #collage {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  .headerText {
+    position: absolute;
+    bottom: 0;
+    opacity: 1.0;
+    color: white;
+    z-index: 10;
+  }
+  #headerTitle {
+    font-size: 45px;
+  }
+  #headerSubtitle {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .headerImg {
+    padding-left: 10px;
+    display: block;
+  }
+  .headerCollage {
+    opacity: 0.65;
+  }
+  .headerText {
+    padding-left: 50px;
+  }
+  #headerTitle {
+    font-size: 50px;
+  }
+  #headerSubtitle {
+    font-size: 35px;
+  }
+}
+
+

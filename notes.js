@@ -8,3 +8,15 @@
 
 // more info: 
 // https://stackoverflow.com/questions/2068344/how-do-i-get-a-youtube-video-thumbnail-from-the-youtube-api
+//
+// ad sizes: top banner: 728 x 90
+
+/*
+TODO:
+- change title font to ideal sans
+- get ad placement approval
+- restrict total page width (around 1440px+ width)
+
+
+
+*/

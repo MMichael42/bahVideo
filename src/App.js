@@ -1,43 +1,48 @@
 import React, { Component } from 'react';
+import Dropdown from 'react-dropdown';
+
+import 'react-dropdown/style.css';
 import './App.css';
 
 import bahData from './data/data';
 
 import Header from './header/header';
+import TopAd from './ads/topAd';
 import VideoPlayer from './videoPlayer/videoPlayer';
-import ShowListItem from './showsList/showsList';
 import TalkListItem from './talksList/talksList';
 
 
 class App extends Component {
 
   state = {
-    currentTalkList: bahData.shows2[0].talks,
+    currentTalkList: bahData.shows[0].talks,
     selectedTalk: bahData.latest,
     selectedShow: bahData.latest.show
-  }
-
-  showTalkListHandler = (show) => {
-    this.setState({currentTalkList: show.talks});
-    this.setState({selectedShow: show.showTitle});
   }
 
   selectVideoHandler = (video) => {
     this.setState({selectedTalk: video});
   }
 
+  showSelectHandler = (target) => {
+    let showsObj = bahData.shows.map( show => show.showTitle);
+    let currentShowIndex = showsObj.indexOf(target.label); 
+    this.setState({currentTalkList: bahData.shows[currentShowIndex].talks});
+    this.setState({selectedShow: target.label});
+  }
+
 
   render() {
 
-    let showList = (
-      <div id = "showList" className="showListWrapper">
-        {bahData.shows2.map( (show, index) => {
-          return <ShowListItem 
-            key={index}
-            click={ () => this.showTalkListHandler(show) } 
-            showName={show.showTitle}
-            selectedShow={this.state.selectedShow} />
-        })}
+    let showListDropdownData = bahData.shows.map( show => show.showTitle );
+
+    let dropDownMenu = (
+      <div className="dropDown">
+        <Dropdown
+          options={showListDropdownData} 
+          onChange={this.showSelectHandler} 
+          value={this.state.selectedShow} 
+          placeholder="Select an option" />
       </div>
     );
 
@@ -49,17 +54,26 @@ class App extends Component {
             click={ () => this.selectVideoHandler(talk) }
             title={talk.title} 
             speaker={talk.speaker} 
-            selectedTalk={this.state.selectedTalk.title} />
+            selectedTalk={this.state.selectedTalk.title}
+            selectedShow={this.state.selectedShow} 
+            youtubeID={talk.embedCode} />
         })}
+      </div>
+    );
+
+    let sidebar = (
+      <div className="sideBar">
+        {dropDownMenu}
+        {talkList}
       </div>
     );
 
     return (
       <div className="App">
         <Header />
+        {/* <TopAd /> */}
         <VideoPlayer currentVideo={this.state.selectedTalk} />
-        {showList}
-        {talkList}
+        {sidebar}
       </div>
     );
   }

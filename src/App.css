@@ -2,7 +2,9 @@
   /* border: 1px solid grey; */
   margin: auto;
   margin-top: 0px;
-  width: 95%;
+  width: 100%;
+
+  background-color: white;
   
   display: grid;
   grid-gap: 1em;
@@ -10,9 +12,17 @@
   grid-template-areas: 
     "header header"
     "video-player video-player"
-    "show-list show-list"
-    "talk-list talk-list"
+    "sidebar sidebar"
   ;
+}
+
+.dropDown {
+  grid-area: drop-down;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  width: 95%;
 }
 
 .showListWrapper {
@@ -25,13 +35,19 @@
 
 .talkListWrapper {
   grid-area: talk-list;
-
-  /* background-color: #ffa205;
-  border: 0px solid grey;
-  border-radius: 4px;
-  padding: 10px; */
+  margin: auto;
+  width: 95%;
 }
 
+.sideBar {
+  grid-area: sidebar;
+  /* border: 1px solid orange; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+
+
+}
 
 
 @media screen and (min-width: 1020px) {
@@ -39,12 +55,38 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "header header header"
-    "show-list show-list show-list"
-    "video-player video-player talk-list"
+    "video-player video-player sidebar"
     ;
+  }
+
+  .dropDown {
+    margin-top: 0px;
+  }
+
+  .sideBar {
+    width: 100%;
+    margin-left: -10px;
+    margin-bottom: 20px;
   }
 
   .showListWrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .talkListWrapper {
+    height: 65vh;
+    overflow-y: scroll;
+    border: 1px #ccc solid;
+    border-radius: 4px;
+    padding: 0px;
+    width: 100%;
+    margin: auto;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .App {
+    max-width: 1440px;
   }
 }

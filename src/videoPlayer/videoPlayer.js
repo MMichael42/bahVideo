@@ -1,10 +1,6 @@
 import React from 'react';
 import './videoPlayer.css';
-
-// video window
-// vidow title
-// by line
-// description
+import TopAd from '../ads/topAd';
 
 const videoPlayer = (props) => {
 
@@ -15,6 +11,8 @@ const videoPlayer = (props) => {
 
   return (
     <div className = "videoPlayerWrapper">
+
+      <TopAd />
 
       <div id = "videoFrame" className = "videoWindow">
         <div className = "videoWrap">
