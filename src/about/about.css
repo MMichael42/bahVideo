@@ -1,7 +1,7 @@
 .aboutWrapper {
   grid-area: about;
   display: grid;
-  grid-gap: 4em;
+  grid-gap: 1em;
   grid-template-columns: 1fr;
   grid-template-areas:
     "belowLogo"
@@ -17,6 +17,14 @@
   /* border: 1px solid red;  */
 }
 
+.imageMargin {
+  margin-bottom: -50px;
+}
+
+.aboutPara {
+  line-height: 1.5em;
+  font-size: 20px;
+}
 
 .whatIs {
   grid-area: whatIs;
@@ -64,6 +72,7 @@
 @media screen and (min-width: 1020px) {
   .aboutWrapper {
     width: 90%;
+    grid-gap: 5em;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "belowLogo whatIs"
@@ -71,5 +80,9 @@
       "figure hypo"
       "footer footer"
     ;
+  }
+
+  .imageMargin {
+    margin-bottom: 0px;
   }
 }
