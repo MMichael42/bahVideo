@@ -8,7 +8,7 @@ const topAd = () => {
     <div className = "topAdWrapper">
       <img id = "topAd" src = {topAdImg} alt="" />
     </div>
-  )
+  );
 }
 
 export default topAd;

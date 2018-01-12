@@ -7,8 +7,6 @@ const videoPlayer = (props) => {
   const videoId = props.currentVideo.embedCode;
   const url = `https://www.youtube.com/embed/${videoId}`;
 
-
-
   return (
     <div className = "videoPlayerWrapper">
 

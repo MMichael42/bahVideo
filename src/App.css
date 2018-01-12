@@ -13,6 +13,7 @@
     "header header"
     "video-player video-player"
     "sidebar sidebar"
+    "about about"
   ;
 }
 
@@ -45,9 +46,8 @@
   display: flex;
   flex-direction: column;
   margin-top: 0px;
-
-
 }
+
 
 
 @media screen and (min-width: 1020px) {
@@ -56,6 +56,7 @@
     grid-template-areas: 
     "header header header"
     "video-player video-player sidebar"
+    "about about about"
     ;
   }
 

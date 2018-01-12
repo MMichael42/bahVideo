@@ -1,0 +1,75 @@
+.aboutWrapper {
+  grid-area: about;
+  display: grid;
+  grid-gap: 4em;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "belowLogo"
+    "whatIs"
+    "zachImage"
+    "zachBio"
+    "figure"
+    "hypo"
+    "footer"
+    ;
+  width: 95%;
+  margin: auto;
+  /* border: 1px solid red;  */
+}
+
+
+.whatIs {
+  grid-area: whatIs;
+}
+.aboutTitle {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.belowLogo {
+  grid-area: belowLogo;
+}
+#belowLogoImg {
+  width: 100%;
+}
+
+.zachImage {
+  grid-area: zachImage;
+}
+#zachImg {
+  width: 100%;
+}
+
+.zachBio {
+  grid-area: zachBio;
+}
+
+.figureImage {
+  grid-area: figure;
+}
+#figImg {
+  width: 100%;
+}
+
+.hypo {
+  grid-area: hypo;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 1020px) {
+  .aboutWrapper {
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "belowLogo whatIs"
+      "zachBio zachImage"
+      "figure hypo"
+      "footer footer"
+    ;
+  }
+}
