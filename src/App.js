@@ -12,7 +12,7 @@ import TalkListItem from './talksList/talksList';
 import About from './about/about';
 
 class App extends Component {
-
+  
   state = {
     currentTalkList: bahData.shows[0].talks,
     selectedTalk: bahData.latest,
@@ -30,9 +30,8 @@ class App extends Component {
     this.setState({selectedShow: target.label});
   }
 
-
   render() {
-
+    console.log('hi mom!');
     let showListDropdownData = bahData.shows.map( show => show.showTitle );
 
     let dropDownMenu = (

@@ -13,7 +13,9 @@
     ;
   cursor: pointer;
 }
-
+.talkListItemWrapper:hover {
+  border: 1px solid #ccc;
+}
 .selectedTalkListItem {
   border: 1px solid grey;
 }
