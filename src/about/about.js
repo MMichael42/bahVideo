@@ -9,7 +9,7 @@ import figure from '../images/fig1.png';
 const about = () => {
   return (
     <div className = "aboutWrapper">
-      <div className = "whatIs">
+      <div className = "whatIs" >
         <p className = "aboutTitle">What is BAHFest?</p>
         <p className = "aboutPara">
           The Festival of Bad Ad Hoc Hypotheses (BAHFest) is a celebration of well-argued and thoroughly researched 

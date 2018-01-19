@@ -15,8 +15,5 @@
 TODO:
 - change title font to ideal sans
 - get ad placement approval
-- restrict total page width (around 1440px+ width)
-
-
-
+- add some small animations
 */
