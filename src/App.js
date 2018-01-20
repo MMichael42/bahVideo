@@ -16,7 +16,7 @@ class App extends Component {
   state = {
     currentTalkList: bahData.shows[0].talks,
     selectedTalk: bahData.latest,
-    selectedShow: bahData.latest.show
+    selectedShow: bahData.latest.show,
   }
 
   selectVideoHandler = (video) => {
@@ -31,7 +31,7 @@ class App extends Component {
   }
 
   render() {
-    console.log('hi mom!');
+    
     let showListDropdownData = bahData.shows.map( show => show.showTitle );
 
     let dropDownMenu = (
