@@ -11,10 +11,14 @@
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
     "header header"
-    "video-player video-player"
+    "mainView mainView"
     "sidebar sidebar"
     "about about"
   ;
+}
+
+.mainView {
+  grid-area: mainView;
 }
 
 .dropDown {
@@ -55,7 +59,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "header header header"
-    "video-player video-player sidebar"
+    "mainView mainView sidebar"
     "about about about"
     ;
   }

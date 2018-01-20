@@ -7,9 +7,11 @@ import './App.css';
 import bahData from './data/data';
 
 import Header from './header/header';
+import TopAd from './ads/topAd';
 import VideoPlayer from './videoPlayer/videoPlayer';
 import TalkListItem from './talksList/talksList';
 import About from './about/about';
+
 
 class App extends Component {
   
@@ -33,6 +35,13 @@ class App extends Component {
   render() {
     console.log('hi mom!');
     let showListDropdownData = bahData.shows.map( show => show.showTitle );
+
+    let mainView = (
+      <div className = "mainView">
+        <TopAd />
+        <VideoPlayer currentVideo={this.state.selectedTalk} />
+      </div>
+    );
 
     let dropDownMenu = (
       <div className="dropDown">
@@ -70,7 +79,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <VideoPlayer currentVideo={this.state.selectedTalk} />
+        {mainView}
         {sidebar}
         <About />
       </div>
