@@ -10,8 +10,6 @@ const videoPlayer = (props) => {
   return (
     <div className = "videoPlayerWrapper">
 
-      <TopAd />
-
       <div id = "videoFrame" className = "videoWindow">
         <div className = "videoWrap">
           <iframe title={props.currentVideo.title} src={url} frameBorder="0" allowFullScreen></iframe>
