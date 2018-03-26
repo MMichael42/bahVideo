@@ -1,6 +1,5 @@
 import React from 'react';
 import './videoPlayer.css';
-import TopAd from '../ads/topAd';
 
 const videoPlayer = (props) => {
 

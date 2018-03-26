@@ -11,6 +11,8 @@
 //
 // ad sizes: top banner: 728 x 90
 
+// colors: bah blue - #48b6fa
+
 /*
 TODO:
 - change title font to ideal sans
