@@ -1,6 +1,5 @@
 import React from 'react';
 import './videoPlayer.css';
-import TopAd from '../ads/topAd';
 
 const videoPlayer = (props) => {
 
@@ -9,8 +8,6 @@ const videoPlayer = (props) => {
 
   return (
     <div className = "videoPlayerWrapper">
-
-      <TopAd />
 
       <div id = "videoFrame" className = "videoWindow">
         <div className = "videoWrap">
