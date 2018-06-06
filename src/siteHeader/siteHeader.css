@@ -1,0 +1,176 @@
+ol, ul {
+  list-style: none;
+  list-style-type: none;
+  list-style-position: initial;
+  list-style-image: initial;
+}
+
+.siteHeaderWrapper {
+  grid-area: header;
+  /* border: 1px solid red; */
+  font-size: 35px;
+  margin-top: 0px;
+
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+
+}
+
+#siteHeader {
+  height: 80px;
+  /* border: 1px solid red; */
+  background-color: transparent;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  top: 0px;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.siteMenuWrap {
+  border: 0px solid red;
+  width: 80%;
+  max-width: 1080px;
+  height: 100%;
+  margin: auto;
+}
+
+#siteNavWrap {
+  border: 0px solid red;
+  /* padding-top: 33px; */
+  float: right;
+  padding-left: 107px;
+  height: 100%;
+}
+#siteNavText {
+  border: 0px solid red;
+  float: left;
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 33px;
+}
+#topMenu {
+  line-height: 0;
+}
+#topMenu li {
+  display: inline-block;
+  padding-right: 22px;
+  word-wrap: break-word;
+}
+#topMenu a {
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+}
+#topMenu a:hover {
+  opacity: 0.7;
+}
+
+#videoTab {
+  color: #2ea3f2;
+}
+
+#eventsTab {
+  color: rgba(0, 0, 0, 0.6);
+}
+#aboutTab {
+  color: rgba(0, 0, 0, 0.6);
+}
+#submitTab {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+.headerText {
+  /* border: 1px solid #008000; */
+  padding-top: 5px;
+}
+#headerTitle {
+  font-size: 35px;
+  font-weight: regular;
+}
+#headerSubtitle {
+  font-size: 25px;
+  font-weight: lightest;
+}
+
+.siteHeaderImg {
+  /* border: 1px solid blue; */
+  height: 40px;
+  width: auto;
+}
+#logo {
+  height:100%;
+  width: auto;
+  display: block;
+}
+
+
+
+@media screen and (max-width: 321px) {
+  #headerTitle {
+    font-size: 30px;
+  }
+  #headerSubtitle {
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  /* css for drop down menu or some other solution */
+  #siteNavText {
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (min-width: 400px) {
+  .siteHeaderWrapper {
+    padding: 0;
+    padding-left: 15px;
+    position: relative;
+  }
+  .siteHeaderImg {
+    padding-top: 0px;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 12px;
+    /* display: none; */
+  }
+
+  .headerText {
+    position: absolute;
+    bottom: 0;
+    opacity: 1.0;
+    color: white;
+    z-index: 10;
+  }
+  #headerTitle {
+    font-size: 45px;
+  }
+  #headerSubtitle {
+    font-size: 30px;
+  }
+}
+
+
+@media screen and (min-width: 1020px) {
+  .siteHeaderImg {
+    padding-left: 10px;
+    display: block;
+  }
+  .headerText {
+    padding-left: 50px;
+  }
+  #headerTitle {
+    font-size: 50px;
+  }
+  #headerSubtitle {
+    font-size: 35px;
+  }
+}
+
+

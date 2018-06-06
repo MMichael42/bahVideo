@@ -1,12 +1,116 @@
 const BAHdata = {
   latest: {
-    speaker: "Mark Abrahams",
-    title: "BAHFest East 2017 Keynote",
-    description: "Marc Abrahams discusses the psychological tips of top leaders at BAHFest East 2017.",
-    embedCode: "vFphKNaRcfM",
-    show: "BAHFest East 2017"
+    speaker: "Zach Weinersmith",
+    title: "Zach Weinersmith keynote speech",
+    description: "Zach gives the opening talk for BAHFest Seattle 2017!",
+    embedCode: "6f-li8SAar8",
+    show: "BAHFest Seattle 2017"
   },
   shows: [
+    { showTitle: "BAHFest Seattle 2017",
+      talks: [
+        {
+          speaker: "Zach Weinersmith",
+          title: "Zach Weinersmith keynote speech",
+          embedCode: "6f-li8SAar8",
+          description: "Zach gives the opening talk for BAHFest Seattle 2017!"
+        },
+        {
+          speaker: "Henry Reich",
+          title: "ISP Set Theory",
+          embedCode: "oCUIEwCMvuk",
+          description: "Henry Reich gives the second Keynote at BAHFest Seattle 2017, exploring a certain internet service provider and their violations of Zermelo–Fraenkel set theory."
+        },
+        {
+          speaker: "Austin Roberts",
+          title: "The Evolution of Olfactory Repugnance",
+          embedCode: "McEqcaP7A9Q",
+          description: "At BAHFest Seattle, Austin Roberts discusses his theory on the evolution of olfactory repugnance and the suppression intra-species predation in Homo sapiens."
+        },
+        {
+          speaker: "Tim Crockett",
+          title: "Food and Air: Climate Change and the Global Obesity Epidemic",
+          embedCode: "w2PkMD7ZJeA",
+          description: "Tim Crockett discusses his theory of the connection between the increase of CO2 emissions and the rise in obesity. "
+        },
+        {
+          speaker: "Robin McLachlan",
+          title: "A Realistic Explanation for Cub Adoption in Bears",
+          embedCode: "ZlMPRvPd2Hg",
+          description: "Robin McLachlan discusses her theory that female bears adopt cubs because male bears are awful."
+        },
+        {
+          speaker: "Tom Nugent",
+          title: "Senescent And Hedonistic Factors In Relativistic Time Dilation",
+          embedCode: "KpbyNAEarT0",
+          description: "Tom Nugent discusses his theory that humans are able to warp space-time and CHANGE the speed of light, using the elderly as evidence."
+        },
+        {
+          speaker: "David Gould",
+          title: "Increasing Human Efficiency Through Long-Duration Wakefulness",
+          embedCode: "8rudRMfaZKc",
+          description: "David Gould describes his idea to end sleep via brain implant."
+        },
+        {
+          speaker: "Karen Donohue",
+          title: "Compulsory Carbon Emission Control",
+          embedCode: "1X-OwmB2wkI",
+          description: "Karen Donohue discusses her proposal to use a SMUG device that emits a horrendous noise in the form of a popular song to stop wasteful behavior."
+        },
+      ]
+    },
+    { showTitle: "BAHFest London 2017",
+      talks: [
+        {
+          speaker: "Matthew Allinson",
+          title: "Making sense of the unmakesensable",
+          embedCode: "LpzCNZr4Af4",
+          description: "Dr. Matthew Allinson delivers the first keynote speech at BAHFest London 2017 and discusses how to make sense of the unmakesensable (which is totally a word) by applying scientific principles to explain Brexit."
+        },
+        {
+          speaker: "Tom Scott",
+          title: "Tom Scott Keynote Speech",
+          embedCode: "7ochAk-wO2c",
+          description: "Tom Scott delivers a keynote speech at BAHFest London 2017 and discusses how to block people in real life."
+        },
+        {
+          speaker: "Simon Watt",
+          title: "The uncommon evolution of the common lobster",
+          embedCode: "wAbjPUp-fac",
+          description: "At BAHFest London 2017, Simon Watt presents his theory: Evolution under novel circumstances: The uncommon case of the common lobster."
+        },
+        {
+          speaker: "Louie Terrill",
+          title: "Why the Kessler Syndrome is key to humanity’s future",
+          embedCode: "cXCANeNoD7E",
+          description: "Watch Louie Terrill at BAHFest London 2017 present his theory, \"Making sure we’re all in this together: Why the Kessler Syndrome is key to humanity’s future.\""
+        },
+        {
+          speaker: "Philippa Skett",
+          title: "Using social media as a source of renewable energy",
+          embedCode: "r9YBzd8PxHk",
+          description: "Philippa Skett discusses how more and more people are taking to their computers to passionately type out their views and share them worldwide. She would like to investigate if there is a potential mechanism to harness this energy expended and use it as a renewable energy source."
+        },
+        {
+          speaker: "Kat Arney",
+          title: "2016: A quantum leap in human evolution",
+          embedCode: "WLsZAbi9XN8",
+          description: "Kat Arney discusses how 2016 was a uniquely stressful year in recent human history, including Brexit, the election of Donald Trump, and a large number of high-profile celebrity deaths. She then proposes that this is a trigger for the mass reactivation of retroviral elements in affected human populations, leading to the general of an unusually high number of new mutations."
+        },
+        {
+          speaker: "Katherine Read",
+          title: "The Protective Effect of Aesthetic Inadequacy",
+          embedCode: "cG3wCLPWKvE",
+          description: "Watch Katherine Read explain why being ugly maybe isn't so bad."
+        },
+        {
+          speaker: "Ed Thorne",
+          title: "Cracking the C-Value Enigma",
+          embedCode: "w2HJ2KrqI_I",
+          description: "Ed Thorne proposes that the non-coding DNA in the human genome is being used as a high-density self-replicating hard drive for an alien race. He then discusses how to use a combination of cryptographic analysis and psychology to deduce features of the data stored in the genome."
+        },
+      ]
+    },
     { showTitle: "BAHFest East 2017",
       talks: [
         {

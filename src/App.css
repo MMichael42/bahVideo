@@ -45,10 +45,14 @@
   /* border: 1px solid orange; */
   display: flex;
   flex-direction: column;
-  margin-top: 0px;
+  margin-top: 80px;
 }
 
-
+@media screen and (max-width: 1019px) {
+  .sideBar {
+    margin-top: 0px;
+  }
+}
 
 @media screen and (min-width: 1020px) {
   .App {

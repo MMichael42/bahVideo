@@ -1,5 +1,6 @@
 {
   "name": "bahvideo2",
+  "homepage": "http://bahfest.com/video-archive",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
