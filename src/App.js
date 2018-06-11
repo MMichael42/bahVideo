@@ -95,11 +95,13 @@ class App extends Component {
       </div>
     );
 
+    
+
 
     return (
       <div className="App">
         <SiteHeader />
-        <VideoPlayer currentVideo={this.state.selectedTalk} />
+        <VideoPlayer currentVideo={this.state.selectedTalk} shareURL={url}/>
         {sidebar}
       </div>
     );

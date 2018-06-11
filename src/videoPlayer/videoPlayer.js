@@ -23,6 +23,16 @@ const videoPlayer = (props) => {
         {props.currentVideo.description}
       </div>
 
+      
+      <div className="fb-like" 
+        data-href={props.shareURL.href} 
+        data-layout="button" 
+        data-action="like" 
+        data-size="large" 
+        data-show-faces="false" 
+        data-share="true">
+      </div>
+
     </div>
   );
 }
