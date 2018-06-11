@@ -4,7 +4,7 @@ const BAHdata = {
     title: "Zach Weinersmith keynote speech",
     description: "Zach gives the opening talk for BAHFest Seattle 2017!",
     embedCode: "6f-li8SAar8",
-    show: "BAHFest Seattle 2017"
+    showTitle: "BAHFest Seattle 2017"
   },
   shows: [
     { showTitle: "BAHFest Seattle 2017",
