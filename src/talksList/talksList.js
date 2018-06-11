@@ -10,7 +10,7 @@ const talkList = (props) => {
   const thumbnailImg = `https://img.youtube.com/vi/${props.youtubeID}/0.jpg`;
 
   return (
-    <a href="#header">
+    <a onClick = {window.scrollTo(0,0)}>
       <div className={selectedStateClass} onClick={props.click}>
         <div className="thumbnailBox">
           <img alt="" src={thumbnailImg} width="100%"/>

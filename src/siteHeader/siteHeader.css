@@ -45,6 +45,7 @@ ol, ul {
   padding-left: 107px;
   height: 100%;
 }
+
 #siteNavText {
   border: 0px solid red;
   float: left;
@@ -107,6 +108,116 @@ ol, ul {
   display: block;
 }
 
+#hamburger {
+  display: none;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+.bar {
+  width: 40px;
+  height: 4px;
+  background-color: #666;
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 2px;
+}
+
+#menuDropDown {
+  visibility: hidden;
+  opacity: 0.0;
+  background-color: white;
+  border-top: 3px solid #2ea3f2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  position: absolute;
+  width: 80%;
+  left: 0;
+  padding: 5%;
+  margin: 5%;
+  margin-top: 0;
+  top: 80px;
+  transition: visibility 0s, opacity 0.2s linear;
+
+}
+#dropDownList {
+  width: 100%;
+  padding-left: 10px;
+  color: #666;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.7em;
+  font-weight: 500;
+}
+.dropDownItem {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  padding-top: 10px;
+  padding-right: 5%;
+  padding-bottom: 10px;
+  padding-left: 5%;
+}
+
+
+.show {
+  /* display: block !important; */
+  visibility: visible !important;
+  opacity: 1.0 !important;
+}
+.filledIn {
+  background-color: #2ea3f2 !important;
+}
+
+
+@media screen and (max-width: 640px) {
+  /* css for drop down menu or some other solution */
+  .siteMenuWrap {
+    width: 100%;
+    padding-left: 30px;
+  }
+  #siteNavWrap {
+    padding-left: 0px;
+    border: 0px solid green;
+    width: 100%;
+  }
+  #siteNavText {
+    float: right;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #siteNavText {
+    display: none;
+  }
+  .siteMenuWrap {
+    padding-left: 0px;
+  }
+  .siteHeaderImg {
+    border: 0px solid red;
+    padding-left: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+  }
+  #logo {
+    border: 0px solid red;
+    max-height: 80%;
+    margin-top: 10px;
+  }
+  #hamburger {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 0px solid #2ea3f2;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 0%;
+    cursor: pointer;
+  }
+  #menuDropDown {
+    /* display: block; */
+  }
+}
 
 
 @media screen and (max-width: 321px) {
@@ -119,15 +230,12 @@ ol, ul {
 }
 
 
-@media screen and (max-width: 700px) {
-  /* css for drop down menu or some other solution */
-  #siteNavText {
-    font-size: 12px;
-  }
-}
 
 
-@media screen and (min-width: 400px) {
+
+
+
+@media screen and (min-width: 500px) {
   .siteHeaderWrapper {
     padding: 0;
     padding-left: 15px;

@@ -16,7 +16,7 @@
 }
 
 .headerText {
-  /* border: 1px solid #008000; */
+  border: 1px solid #008000;
   padding-top: 5px;
 }
 #headerTitle {
@@ -55,6 +55,11 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .headerText {
+    display: hidden;
+  }
+}
 
 @media screen and (min-width: 400px) {
   .headerWrapper {

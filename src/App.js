@@ -7,10 +7,10 @@ import './App.css';
 import bahData from './data/data';
 
 import SiteHeader from './siteHeader/siteHeader';
-import Header from './header/header';
 import VideoPlayer from './videoPlayer/videoPlayer';
 import TalkListItem from './talksList/talksList';
-import About from './about/about';
+
+
 
 class App extends Component {
   
@@ -71,13 +71,13 @@ class App extends Component {
     return (
       <div className="App">
         <SiteHeader />
-        {/* <Header /> */}
         <VideoPlayer currentVideo={this.state.selectedTalk} />
         {sidebar}
-        {/* <About /> */}
       </div>
     );
   }
 }
+
+
 
 export default App;
