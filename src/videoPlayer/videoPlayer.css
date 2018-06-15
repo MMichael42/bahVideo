@@ -57,5 +57,11 @@
 }
 
 .fb-like {
-  margin-top: 20px;
+  grid-area: fb-button;
+  margin-top: 0px;
+}
+
+#tweetButton {
+  grid-area: twitter-button;
+  margin-top: 05px;
 }
