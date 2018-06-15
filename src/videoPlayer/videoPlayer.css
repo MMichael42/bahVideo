@@ -56,12 +56,25 @@
   min-height: 100px;
 }
 
+.shareButtons {
+  display: flex;
+  width: 100%;
+  border: 0px solid black;
+  margin-top: 10px;
+}
+
 .fb-like {
+  border: 0px solid red;
   grid-area: fb-button;
   margin-top: 0px;
 }
 
 #tweetButton {
+  border: 0px solid red;
   grid-area: twitter-button;
-  margin-top: 05px;
+  margin-top: 0px;
+  margin-left: 5px;
+  max-width: 50%;
+
+
 }
