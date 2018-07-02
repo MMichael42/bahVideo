@@ -23,7 +23,7 @@ let urlShow = url.searchParams.get("show") || 0;
 if (urlShow > showCount - 1) {
   urlShow = 0;
   url.searchParams.set("show", 0);
-  document.location.search = url.searchParams;
+  // document.location.search = url.searchParams;
 }
 
 let talkCount = bahData.shows[urlShow].talks.length;
@@ -32,7 +32,7 @@ let urlTalk = url.searchParams.get("talk") || 0;
 if (urlTalk > talkCount - 1) {
   urlTalk = 0;
   url.searchParams.set("talk", 0);
-  document.location.search = url.searchParams;
+  // document.location.search = url.searchParams;
 }
 
 class App extends Component {
@@ -46,7 +46,8 @@ class App extends Component {
   selectVideoHandler = (video, index) => {
     this.setState({selectedTalk: video});
     url.searchParams.set("talk", index);
-    document.location.search = url.searchParams;
+
+    // document.location.search = url.searchParams;
   }
 
   showSelectHandler = (target) => {
@@ -57,7 +58,8 @@ class App extends Component {
     url.searchParams.set("show", currentShowIndex);
     // reset talk selection to the first talk in the list since we're changing shows
     url.searchParams.set("talk", 0);
-    document.location.search = url.searchParams;
+
+    // document.location.search = url.searchParams;
   }
 
   render() {

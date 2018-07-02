@@ -24,14 +24,14 @@ const videoPlayer = (props) => {
       </div>
 
       <div className="shareButtons">
-        <div className="fb-like" 
+        {/* <div className="fb-like" 
           data-href={props.shareURL.href} 
           data-layout="button" 
           data-action="like" 
           data-size="large" 
           data-show-faces="false" 
           data-share="true">
-        </div>
+        </div> */}
 
         <div id="tweetButton">
           <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
@@ -42,11 +42,8 @@ const videoPlayer = (props) => {
             data-show-count="false">Tweet
           </a>
         </div>
-        
-      </div> {/* end of share buttons div */}
+      </div>
       
-      
-
     </div>
   );
 }
